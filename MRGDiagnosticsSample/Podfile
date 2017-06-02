@@ -1,0 +1,9 @@
+platform :ios, '8.0'
+
+target 'MRGDiagnosticsSample' do
+  use_frameworks!
+
+  # Pods for MRGDiagnosticsSample
+  pod 'MRGDiagnostics', :path => '../MRGDiagnostics.podspec'
+
+end

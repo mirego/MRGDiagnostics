@@ -1,0 +1,21 @@
+language: objective-c
+
+osx_image: xcode8.3
+xcode_project: MRGDiagnostics.xcodeproj
+xcode_scheme: MRGDiagnostics
+xcode_sdk: iphonesimulator10.3
+env:
+  global:
+before_install:
+  - gem install xcpretty-travis-formatter
+
+script: xcodebuild
+  -project  MRGDiagnostics.xcodeproj
+  -scheme "MRGDiagnostics"
+  -sdk iphonesimulator
+  -destination 'platform=iOS Simulator,name=iPhone 6'
+  -enableCodeCoverage YES
+  clean
+  build
+ | xcpretty -f `xcpretty-travis-formatter`
+

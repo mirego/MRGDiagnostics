@@ -1,0 +1,16 @@
+PODS:
+  - MRGDiagnostics (0.1.0)
+
+DEPENDENCIES:
+  - MRGDiagnostics (from `../MRGDiagnostics.podspec`)
+
+EXTERNAL SOURCES:
+  MRGDiagnostics:
+    :path: "../MRGDiagnostics.podspec"
+
+SPEC CHECKSUMS:
+  MRGDiagnostics: d59df55392eef4c47daed17fb6e9c85ac4c1410f
+
+PODFILE CHECKSUM: 2cb83eab7390104edf320d75da1432d9c36b4156
+
+COCOAPODS: 1.2.1
