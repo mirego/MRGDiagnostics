@@ -149,7 +149,7 @@ open class MRGDiagnosticsViewController: UIViewController {
         
         if (self.presentingViewController != nil) {
             let closeButton = UIBarButtonItem(title: localizedString("diagnostics_close"), style: .plain, target: self, action: #selector(didTapCloseButton))
-            closeButton.setTitleTextAttributes([NSFontAttributeName: UIFont.systemFont(ofSize: 16), NSForegroundColorAttributeName: UIColor.black], for: .normal)
+            closeButton.setTitleTextAttributes([NSAttributedStringKey.font: UIFont.systemFont(ofSize: 16), NSAttributedStringKey.foregroundColor: UIColor.black], for: .normal)
             navigationItem.leftBarButtonItem = closeButton
         }
     }
@@ -166,7 +166,7 @@ open class MRGDiagnosticsViewController: UIViewController {
 }
 
 extension MRGDiagnosticsViewController /* Events */ {
-    func didTapCloseButton() {
+    @objc func didTapCloseButton() {
         dismiss(animated: true)
     }
 }

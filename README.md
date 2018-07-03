@@ -6,8 +6,8 @@ An iOS Framework that offers you an easy way to add a diagnostics view to your p
 ## Requirements
 
 - iOS 8.0+
-- Xcode 8.2.1
-- Swift 3.0
+- Xcode 9.4
+- Swift 4.1
 
 ## Installation
 
