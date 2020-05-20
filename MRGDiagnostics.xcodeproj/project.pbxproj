@@ -13,7 +13,7 @@
 		FDD8B18C1EE12432002112D6 /* MRGDiagnosticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8B1891EE12432002112D6 /* MRGDiagnosticsView.swift */; };
 		FDD8B18E1EE12437002112D6 /* MRGDiagnosticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8B18D1EE12437002112D6 /* MRGDiagnosticsViewController.swift */; };
 		FDD8B1901EE12496002112D6 /* MRGReachabilityUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8B18F1EE12496002112D6 /* MRGReachabilityUtils.swift */; };
-		FDE9EED11F0D41F7007C2B5A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDE9EECF1F0D41F7007C2B5A /* Localizable.strings */; };
+		FDE9EED11F0D41F7007C2B5A /* MRGDiagnosticsLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDE9EECF1F0D41F7007C2B5A /* MRGDiagnosticsLocalizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +25,8 @@
 		FDD8B1891EE12432002112D6 /* MRGDiagnosticsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRGDiagnosticsView.swift; sourceTree = "<group>"; };
 		FDD8B18D1EE12437002112D6 /* MRGDiagnosticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRGDiagnosticsViewController.swift; sourceTree = "<group>"; };
 		FDD8B18F1EE12496002112D6 /* MRGReachabilityUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRGReachabilityUtils.swift; sourceTree = "<group>"; };
-		FDE9EED01F0D41F7007C2B5A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		FDE9EED21F0D41FC007C2B5A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FDE9EED01F0D41F7007C2B5A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MRGDiagnosticsLocalizable.strings; sourceTree = "<group>"; };
+		FDE9EED21F0D41FC007C2B5A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MRGDiagnosticsLocalizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 		FDD8B1801EE123E7002112D6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FDE9EECF1F0D41F7007C2B5A /* Localizable.strings */,
+				FDE9EECF1F0D41F7007C2B5A /* MRGDiagnosticsLocalizable.strings */,
 			);
 			name = Resources;
 			path = MRGDiagnostics/Resources;
@@ -176,7 +176,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDE9EED11F0D41F7007C2B5A /* Localizable.strings in Resources */,
+				FDE9EED11F0D41F7007C2B5A /* MRGDiagnosticsLocalizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,13 +198,13 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FDE9EECF1F0D41F7007C2B5A /* Localizable.strings */ = {
+		FDE9EECF1F0D41F7007C2B5A /* MRGDiagnosticsLocalizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FDE9EED01F0D41F7007C2B5A /* fr */,
 				FDE9EED21F0D41FC007C2B5A /* en */,
 			);
-			name = Localizable.strings;
+			name = MRGDiagnosticsLocalizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

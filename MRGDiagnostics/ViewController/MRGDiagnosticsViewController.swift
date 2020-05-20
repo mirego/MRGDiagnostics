@@ -204,7 +204,7 @@ extension MRGDiagnosticsViewController /* Private Methods */ {
     
     
     func localizedString(_ string: String) -> String {
-        return NSLocalizedString(string, bundle: Bundle(for: self.classForCoder), comment: "")
+        return NSLocalizedString(string, tableName: "MRGDiagnosticsLocalizable", bundle: Bundle(for: self.classForCoder), comment: "")
     }
 }
 
