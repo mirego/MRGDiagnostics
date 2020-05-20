@@ -1,5 +1,5 @@
 # MRGDiagnostics
-[![Build Status](https://travis-ci.org/mirego/MRGDiagnostics.png?branch=master)](https://travis-ci.org/mirego/MRGDiagnostics)
+![](https://github.com/mirego/MRGDiagnostics/workflows/CI/badge.svg)
 
 An iOS Framework that offers you an easy way to add a diagnostics view to your project.
 

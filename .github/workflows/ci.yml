@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  # Trigger the workflow on push only for the master branch
+  push:
+    branches:
+      - master
+  # Trigger the workflow on any pull requests
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  build:
+
+    runs-on: macOS-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build
+        run: |
+          xcodebuild -project MRGDiagnostics.xcodeproj -scheme "MRGDiagnostics" -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=13.4.1,name=iPhone 8' clean build
