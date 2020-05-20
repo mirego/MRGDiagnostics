@@ -71,7 +71,7 @@ open class MRGDiagnosticsViewController: UIViewController {
     var batteryLevel: String {
         get {
             UIDevice.current.isBatteryMonitoringEnabled = true;
-            let batteryLevel = fabs(UIDevice.current.batteryLevel * Float(100))
+            let batteryLevel = abs(UIDevice.current.batteryLevel * Float(100))
             return String.init(format: "%.0f %%", batteryLevel)
         }
     }
@@ -149,7 +149,7 @@ open class MRGDiagnosticsViewController: UIViewController {
         
         if (self.presentingViewController != nil) {
             let closeButton = UIBarButtonItem(title: localizedString("diagnostics_close"), style: .plain, target: self, action: #selector(didTapCloseButton))
-            closeButton.setTitleTextAttributes([NSAttributedStringKey.font: UIFont.systemFont(ofSize: 16), NSAttributedStringKey.foregroundColor: UIColor.black], for: .normal)
+            closeButton.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.black], for: .normal)
             navigationItem.leftBarButtonItem = closeButton
         }
     }

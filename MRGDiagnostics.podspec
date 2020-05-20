@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MRGDiagnostics"
-  s.version      = "0.2.0"
+  s.version      = "0.3.0"
   s.summary      = "iOS Framework that offers you an easy way to add a diagnostics view to your project."
   s.homepage     = "https://github.com/mirego/MRGDiagnostics"
   s.license      = 'BSD 3-Clause'
@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.platform     = :ios, "8.0"
-  s.swift_version = '4.1'
+  s.swift_version = '5.0'
 end
